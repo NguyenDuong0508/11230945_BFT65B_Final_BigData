@@ -1,0 +1,882 @@
+{
+  "auxiliary_source_notes": {
+    "failures": {
+      "null_CERT": 488,
+      "resolution_counts": {
+        "FAILURE": 3524,
+        "ASSISTANCE": 593
+      }
+    },
+    "institutions": {
+      "null_CERT": 0
+    }
+  },
+  "checked_at_utc": "2026-11-15T12:01:41.769511+00:00",
+  "start": "1984-03-31",
+  "end": "2026-06-30",
+  "full_course_scope": true,
+  "expected_quarters": 170,
+  "verified_quarters": 170,
+  "rows": {
+    "financials": 1682616,
+    "failures": 4117,
+    "institutions": 27835
+  },
+  "distinct_financial_banks": 24064,
+  "quarter_rows": [
+    {
+      "quarter": "19840331",
+      "rows": 17930,
+      "api_total": 17930
+    },
+    {
+      "quarter": "19840630",
+      "rows": 17935,
+      "api_total": 17935
+    },
+    {
+      "quarter": "19840930",
+      "rows": 17946,
+      "api_total": 17946
+    },
+    {
+      "quarter": "19841231",
+      "rows": 17949,
+      "api_total": 17949
+    },
+    {
+      "quarter": "19850331",
+      "rows": 17968,
+      "api_total": 17968
+    },
+    {
+      "quarter": "19850630",
+      "rows": 17853,
+      "api_total": 17853
+    },
+    {
+      "quarter": "19850930",
+      "rows": 18058,
+      "api_total": 18058
+    },
+    {
+      "quarter": "19851231",
+      "rows": 18082,
+      "api_total": 18082
+    },
+    {
+      "quarter": "19860331",
+      "rows": 18133,
+      "api_total": 18133
+    },
+    {
+      "quarter": "19860630",
+      "rows": 18068,
+      "api_total": 18068
+    },
+    {
+      "quarter": "19860930",
+      "rows": 18051,
+      "api_total": 18051
+    },
+    {
+      "quarter": "19861231",
+      "rows": 17930,
+      "api_total": 17930
+    },
+    {
+      "quarter": "19870331",
+      "rows": 17795,
+      "api_total": 17795
+    },
+    {
+      "quarter": "19870630",
+      "rows": 17660,
+      "api_total": 17660
+    },
+    {
+      "quarter": "19870930",
+      "rows": 17560,
+      "api_total": 17560
+    },
+    {
+      "quarter": "19871231",
+      "rows": 17384,
+      "api_total": 17384
+    },
+    {
+      "quarter": "19880331",
+      "rows": 17204,
+      "api_total": 17204
+    },
+    {
+      "quarter": "19880630",
+      "rows": 17057,
+      "api_total": 17057
+    },
+    {
+      "quarter": "19880930",
+      "rows": 16822,
+      "api_total": 16822
+    },
+    {
+      "quarter": "19881231",
+      "rows": 16632,
+      "api_total": 16632
+    },
+    {
+      "quarter": "19890331",
+      "rows": 16505,
+      "api_total": 16505
+    },
+    {
+      "quarter": "19890630",
+      "rows": 16444,
+      "api_total": 16444
+    },
+    {
+      "quarter": "19890930",
+      "rows": 16296,
+      "api_total": 16296
+    },
+    {
+      "quarter": "19891231",
+      "rows": 16152,
+      "api_total": 16152
+    },
+    {
+      "quarter": "19900331",
+      "rows": 16011,
+      "api_total": 16011
+    },
+    {
+      "quarter": "19900630",
+      "rows": 15762,
+      "api_total": 15762
+    },
+    {
+      "quarter": "19900930",
+      "rows": 15570,
+      "api_total": 15570
+    },
+    {
+      "quarter": "19901231",
+      "rows": 15426,
+      "api_total": 15426
+    },
+    {
+      "quarter": "19910331",
+      "rows": 15294,
+      "api_total": 15294
+    },
+    {
+      "quarter": "19910630",
+      "rows": 15123,
+      "api_total": 15123
+    },
+    {
+      "quarter": "19910930",
+      "rows": 14868,
+      "api_total": 14868
+    },
+    {
+      "quarter": "19911231",
+      "rows": 14664,
+      "api_total": 14664
+    },
+    {
+      "quarter": "19920331",
+      "rows": 14474,
+      "api_total": 14474
+    },
+    {
+      "quarter": "19920630",
+      "rows": 14328,
+      "api_total": 14328
+    },
+    {
+      "quarter": "19920930",
+      "rows": 14195,
+      "api_total": 14195
+    },
+    {
+      "quarter": "19921231",
+      "rows": 14028,
+      "api_total": 14028
+    },
+    {
+      "quarter": "19930331",
+      "rows": 13860,
+      "api_total": 13860
+    },
+    {
+      "quarter": "19930630",
+      "rows": 13695,
+      "api_total": 13695
+    },
+    {
+      "quarter": "19930930",
+      "rows": 13544,
+      "api_total": 13544
+    },
+    {
+      "quarter": "19931231",
+      "rows": 13388,
+      "api_total": 13388
+    },
+    {
+      "quarter": "19940331",
+      "rows": 13230,
+      "api_total": 13230
+    },
+    {
+      "quarter": "19940630",
+      "rows": 13055,
+      "api_total": 13055
+    },
+    {
+      "quarter": "19940930",
+      "rows": 12882,
+      "api_total": 12882
+    },
+    {
+      "quarter": "19941231",
+      "rows": 12708,
+      "api_total": 12708
+    },
+    {
+      "quarter": "19950331",
+      "rows": 12462,
+      "api_total": 12462
+    },
+    {
+      "quarter": "19950630",
+      "rows": 12354,
+      "api_total": 12354
+    },
+    {
+      "quarter": "19950930",
+      "rows": 12216,
+      "api_total": 12216
+    },
+    {
+      "quarter": "19951231",
+      "rows": 12076,
+      "api_total": 12076
+    },
+    {
+      "quarter": "19960331",
+      "rows": 11952,
+      "api_total": 11952
+    },
+    {
+      "quarter": "19960630",
+      "rows": 11774,
+      "api_total": 11774
+    },
+    {
+      "quarter": "19960930",
+      "rows": 11655,
+      "api_total": 11655
+    },
+    {
+      "quarter": "19961231",
+      "rows": 11561,
+      "api_total": 11561
+    },
+    {
+      "quarter": "19970331",
+      "rows": 11456,
+      "api_total": 11456
+    },
+    {
+      "quarter": "19970630",
+      "rows": 11285,
+      "api_total": 11285
+    },
+    {
+      "quarter": "19970930",
+      "rows": 11154,
+      "api_total": 11154
+    },
+    {
+      "quarter": "19971231",
+      "rows": 11046,
+      "api_total": 11046
+    },
+    {
+      "quarter": "19980331",
+      "rows": 10908,
+      "api_total": 10908
+    },
+    {
+      "quarter": "19980630",
+      "rows": 10840,
+      "api_total": 10840
+    },
+    {
+      "quarter": "19980930",
+      "rows": 10747,
+      "api_total": 10747
+    },
+    {
+      "quarter": "19981231",
+      "rows": 10584,
+      "api_total": 10584
+    },
+    {
+      "quarter": "19990331",
+      "rows": 10515,
+      "api_total": 10515
+    },
+    {
+      "quarter": "19990630",
+      "rows": 10451,
+      "api_total": 10451
+    },
+    {
+      "quarter": "19990930",
+      "rows": 10395,
+      "api_total": 10395
+    },
+    {
+      "quarter": "19991231",
+      "rows": 10344,
+      "api_total": 10344
+    },
+    {
+      "quarter": "20000331",
+      "rows": 10274,
+      "api_total": 10274
+    },
+    {
+      "quarter": "20000630",
+      "rows": 10225,
+      "api_total": 10225
+    },
+    {
+      "quarter": "20000930",
+      "rows": 10112,
+      "api_total": 10112
+    },
+    {
+      "quarter": "20001231",
+      "rows": 10020,
+      "api_total": 10020
+    },
+    {
+      "quarter": "20010331",
+      "rows": 9940,
+      "api_total": 9940
+    },
+    {
+      "quarter": "20010630",
+      "rows": 9863,
+      "api_total": 9863
+    },
+    {
+      "quarter": "20010930",
+      "rows": 9818,
+      "api_total": 9818
+    },
+    {
+      "quarter": "20011231",
+      "rows": 9731,
+      "api_total": 9731
+    },
+    {
+      "quarter": "20020331",
+      "rows": 9634,
+      "api_total": 9634
+    },
+    {
+      "quarter": "20020630",
+      "rows": 9579,
+      "api_total": 9579
+    },
+    {
+      "quarter": "20020930",
+      "rows": 9527,
+      "api_total": 9527
+    },
+    {
+      "quarter": "20021231",
+      "rows": 9464,
+      "api_total": 9464
+    },
+    {
+      "quarter": "20030331",
+      "rows": 9424,
+      "api_total": 9424
+    },
+    {
+      "quarter": "20030630",
+      "rows": 9379,
+      "api_total": 9379
+    },
+    {
+      "quarter": "20030930",
+      "rows": 9348,
+      "api_total": 9348
+    },
+    {
+      "quarter": "20031231",
+      "rows": 9296,
+      "api_total": 9296
+    },
+    {
+      "quarter": "20040331",
+      "rows": 9229,
+      "api_total": 9229
+    },
+    {
+      "quarter": "20040630",
+      "rows": 9190,
+      "api_total": 9190
+    },
+    {
+      "quarter": "20040930",
+      "rows": 9134,
+      "api_total": 9134
+    },
+    {
+      "quarter": "20041231",
+      "rows": 9084,
+      "api_total": 9084
+    },
+    {
+      "quarter": "20050331",
+      "rows": 9040,
+      "api_total": 9040
+    },
+    {
+      "quarter": "20050630",
+      "rows": 8973,
+      "api_total": 8973
+    },
+    {
+      "quarter": "20050930",
+      "rows": 8964,
+      "api_total": 8964
+    },
+    {
+      "quarter": "20051231",
+      "rows": 8938,
+      "api_total": 8938
+    },
+    {
+      "quarter": "20060331",
+      "rows": 8894,
+      "api_total": 8894
+    },
+    {
+      "quarter": "20060630",
+      "rows": 8882,
+      "api_total": 8882
+    },
+    {
+      "quarter": "20060930",
+      "rows": 8848,
+      "api_total": 8848
+    },
+    {
+      "quarter": "20061231",
+      "rows": 8783,
+      "api_total": 8783
+    },
+    {
+      "quarter": "20070331",
+      "rows": 8750,
+      "api_total": 8750
+    },
+    {
+      "quarter": "20070630",
+      "rows": 8715,
+      "api_total": 8715
+    },
+    {
+      "quarter": "20070930",
+      "rows": 8658,
+      "api_total": 8658
+    },
+    {
+      "quarter": "20071231",
+      "rows": 8631,
+      "api_total": 8631
+    },
+    {
+      "quarter": "20080331",
+      "rows": 8588,
+      "api_total": 8588
+    },
+    {
+      "quarter": "20080630",
+      "rows": 8544,
+      "api_total": 8544
+    },
+    {
+      "quarter": "20080930",
+      "rows": 8476,
+      "api_total": 8476
+    },
+    {
+      "quarter": "20081231",
+      "rows": 8395,
+      "api_total": 8395
+    },
+    {
+      "quarter": "20090331",
+      "rows": 8337,
+      "api_total": 8337
+    },
+    {
+      "quarter": "20090630",
+      "rows": 8286,
+      "api_total": 8286
+    },
+    {
+      "quarter": "20090930",
+      "rows": 8190,
+      "api_total": 8190
+    },
+    {
+      "quarter": "20091231",
+      "rows": 8103,
+      "api_total": 8103
+    },
+    {
+      "quarter": "20100331",
+      "rows": 8024,
+      "api_total": 8024
+    },
+    {
+      "quarter": "20100630",
+      "rows": 7922,
+      "api_total": 7922
+    },
+    {
+      "quarter": "20100930",
+      "rows": 7852,
+      "api_total": 7852
+    },
+    {
+      "quarter": "20101231",
+      "rows": 7747,
+      "api_total": 7747
+    },
+    {
+      "quarter": "20110331",
+      "rows": 7663,
+      "api_total": 7663
+    },
+    {
+      "quarter": "20110630",
+      "rows": 7601,
+      "api_total": 7601
+    },
+    {
+      "quarter": "20110930",
+      "rows": 7523,
+      "api_total": 7523
+    },
+    {
+      "quarter": "20111231",
+      "rows": 7443,
+      "api_total": 7443
+    },
+    {
+      "quarter": "20120331",
+      "rows": 7394,
+      "api_total": 7394
+    },
+    {
+      "quarter": "20120630",
+      "rows": 7331,
+      "api_total": 7331
+    },
+    {
+      "quarter": "20120930",
+      "rows": 7266,
+      "api_total": 7266
+    },
+    {
+      "quarter": "20121231",
+      "rows": 7166,
+      "api_total": 7166
+    },
+    {
+      "quarter": "20130331",
+      "rows": 7101,
+      "api_total": 7101
+    },
+    {
+      "quarter": "20130630",
+      "rows": 7022,
+      "api_total": 7022
+    },
+    {
+      "quarter": "20130930",
+      "rows": 6972,
+      "api_total": 6972
+    },
+    {
+      "quarter": "20131231",
+      "rows": 6894,
+      "api_total": 6894
+    },
+    {
+      "quarter": "20140331",
+      "rows": 6812,
+      "api_total": 6812
+    },
+    {
+      "quarter": "20140630",
+      "rows": 6738,
+      "api_total": 6738
+    },
+    {
+      "quarter": "20140930",
+      "rows": 6668,
+      "api_total": 6668
+    },
+    {
+      "quarter": "20141231",
+      "rows": 6587,
+      "api_total": 6587
+    },
+    {
+      "quarter": "20150331",
+      "rows": 6496,
+      "api_total": 6496
+    },
+    {
+      "quarter": "20150630",
+      "rows": 6425,
+      "api_total": 6425
+    },
+    {
+      "quarter": "20150930",
+      "rows": 6345,
+      "api_total": 6345
+    },
+    {
+      "quarter": "20151231",
+      "rows": 6255,
+      "api_total": 6255
+    },
+    {
+      "quarter": "20160331",
+      "rows": 6193,
+      "api_total": 6193
+    },
+    {
+      "quarter": "20160630",
+      "rows": 6129,
+      "api_total": 6129
+    },
+    {
+      "quarter": "20160930",
+      "rows": 6051,
+      "api_total": 6051
+    },
+    {
+      "quarter": "20161231",
+      "rows": 5983,
+      "api_total": 5983
+    },
+    {
+      "quarter": "20170331",
+      "rows": 5925,
+      "api_total": 5925
+    },
+    {
+      "quarter": "20170630",
+      "rows": 5856,
+      "api_total": 5856
+    },
+    {
+      "quarter": "20170930",
+      "rows": 5806,
+      "api_total": 5806
+    },
+    {
+      "quarter": "20171231",
+      "rows": 5738,
+      "api_total": 5738
+    },
+    {
+      "quarter": "20180331",
+      "rows": 5674,
+      "api_total": 5674
+    },
+    {
+      "quarter": "20180630",
+      "rows": 5610,
+      "api_total": 5610
+    },
+    {
+      "quarter": "20180930",
+      "rows": 5544,
+      "api_total": 5544
+    },
+    {
+      "quarter": "20181231",
+      "rows": 5473,
+      "api_total": 5473
+    },
+    {
+      "quarter": "20190331",
+      "rows": 5428,
+      "api_total": 5428
+    },
+    {
+      "quarter": "20190630",
+      "rows": 5369,
+      "api_total": 5369
+    },
+    {
+      "quarter": "20190930",
+      "rows": 5325,
+      "api_total": 5325
+    },
+    {
+      "quarter": "20191231",
+      "rows": 5244,
+      "api_total": 5244
+    },
+    {
+      "quarter": "20200331",
+      "rows": 5182,
+      "api_total": 5182
+    },
+    {
+      "quarter": "20200630",
+      "rows": 5131,
+      "api_total": 5131
+    },
+    {
+      "quarter": "20200930",
+      "rows": 5098,
+      "api_total": 5098
+    },
+    {
+      "quarter": "20201231",
+      "rows": 5067,
+      "api_total": 5067
+    },
+    {
+      "quarter": "20210331",
+      "rows": 5044,
+      "api_total": 5044
+    },
+    {
+      "quarter": "20210630",
+      "rows": 5015,
+      "api_total": 5015
+    },
+    {
+      "quarter": "20210930",
+      "rows": 4979,
+      "api_total": 4979
+    },
+    {
+      "quarter": "20211231",
+      "rows": 4904,
+      "api_total": 4904
+    },
+    {
+      "quarter": "20220331",
+      "rows": 4861,
+      "api_total": 4861
+    },
+    {
+      "quarter": "20220630",
+      "rows": 4838,
+      "api_total": 4838
+    },
+    {
+      "quarter": "20220930",
+      "rows": 4813,
+      "api_total": 4813
+    },
+    {
+      "quarter": "20221231",
+      "rows": 4773,
+      "api_total": 4773
+    },
+    {
+      "quarter": "20230331",
+      "rows": 4740,
+      "api_total": 4740
+    },
+    {
+      "quarter": "20230630",
+      "rows": 4714,
+      "api_total": 4714
+    },
+    {
+      "quarter": "20230930",
+      "rows": 4686,
+      "api_total": 4686
+    },
+    {
+      "quarter": "20231231",
+      "rows": 4658,
+      "api_total": 4658
+    },
+    {
+      "quarter": "20240331",
+      "rows": 4640,
+      "api_total": 4640
+    },
+    {
+      "quarter": "20240630",
+      "rows": 4610,
+      "api_total": 4610
+    },
+    {
+      "quarter": "20240930",
+      "rows": 4589,
+      "api_total": 4589
+    },
+    {
+      "quarter": "20241231",
+      "rows": 4560,
+      "api_total": 4560
+    },
+    {
+      "quarter": "20250331",
+      "rows": 4536,
+      "api_total": 4536
+    },
+    {
+      "quarter": "20250630",
+      "rows": 4494,
+      "api_total": 4494
+    },
+    {
+      "quarter": "20250930",
+      "rows": 4452,
+      "api_total": 4452
+    },
+    {
+      "quarter": "20251231",
+      "rows": 4411,
+      "api_total": 4411
+    },
+    {
+      "quarter": "20260331",
+      "rows": 4353,
+      "api_total": 4353
+    },
+    {
+      "quarter": "20260630",
+      "rows": 4313,
+      "api_total": 4313
+    }
+  ],
+  "missing_or_invalid": [],
+  "unexpected_parquet_files": [],
+  "passed": true,
+  "scope_note": "Completeness is relative to the recorded API snapshot and selected fields; historical revisions are not reconstructed."
+}

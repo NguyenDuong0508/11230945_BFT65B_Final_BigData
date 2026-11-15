@@ -1,0 +1,471 @@
+{
+  "financials": {
+    "url": "https://api.fdic.gov/banks/docs/risview_properties.yaml",
+    "sha256": "b257457e4e821d6a0d9f88ffc4e6e0da80e4ccf67fa394cadb21587b50b23d59",
+    "fields": {
+      "CERT": {
+        "title": "FDIC Certificate #",
+        "description": "A unique NUMBER assigned by the FDIC used to identify institutions and for the issuance of insurance certificates.",
+        "type": "number",
+        "x-source-overwrite": false,
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "CERT"
+          },
+          {
+            "file": "RISVIEW_MERGED",
+            "field": "C_CERT"
+          },
+          {
+            "file": "VINST_FIN_CUR_SDC",
+            "field": "ORG_CERT_NUM"
+          }
+        ]
+      },
+      "REPDTE": {
+        "title": "Report Date",
+        "description": "The last day of the financial reporting period selected.",
+        "type": "string",
+        "x-elastic-type": "keyword",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "REPDTE"
+          },
+          {
+            "file": "RISVIEW_MERGED",
+            "field": "REPDTE"
+          }
+        ]
+      },
+      "STNAME": {
+        "title": "STATE NAME",
+        "description": null,
+        "type": "string",
+        "x-elastic-type": "keyword",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "STNAME"
+          }
+        ]
+      },
+      "ASSET": {
+        "type": "number",
+        "title": "Total assets",
+        "description": "The sum of all assets owned by the institution including cash, loans, securities, bank premises and other assets. This total does not include off-balance-sheet accounts.",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "ASSET"
+          },
+          {
+            "file": "RISVIEW_MERGED",
+            "field": "L_ASSET"
+          }
+        ]
+      },
+      "DEP": {
+        "title": "Total deposits",
+        "description": "The sum of all deposits including demand deposits, money market deposits, other savings deposits, time deposits and deposits in foreign offices.",
+        "type": "number",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "DEP"
+          },
+          {
+            "file": "RISVIEW_MERGED",
+            "field": "L_DEP"
+          }
+        ]
+      },
+      "EQ": {
+        "title": "Equity capital",
+        "description": "Total equity capital (includes preferred and common stock, surplus and undivided profits).",
+        "type": "number",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "EQ"
+          }
+        ]
+      },
+      "CHBAL": {
+        "title": "CASH & DUE FROM DEPOSITORY INST",
+        "description": null,
+        "type": "number",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "CHBAL"
+          }
+        ]
+      },
+      "SC": {
+        "title": "SECURITIES",
+        "description": null,
+        "type": "number",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "SC"
+          }
+        ]
+      },
+      "LNLSGR": {
+        "title": "LOANS AND LEASES-TOTAL",
+        "description": null,
+        "type": "number",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "LNLSGR"
+          }
+        ]
+      },
+      "LNATRES": {
+        "title": "ALLOW FOR LOANS LOSS ADJUSTED",
+        "description": null,
+        "type": "number",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "LNATRES"
+          }
+        ]
+      },
+      "NCLNLS": {
+        "title": "TOTAL N/C-LOANS & LEASES",
+        "description": null,
+        "type": "number",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "NCLNLS"
+          }
+        ]
+      },
+      "NETINC": {
+        "title": "Net income",
+        "description": "Net interest income plus total noninterest income plus realized gains (losses) on securities and extraordinary items, less total noninterest expense, loan loss provisions and income taxes.",
+        "type": "number",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "NETINC"
+          }
+        ]
+      },
+      "ROA": {
+        "title": "Return on assets (ROA)",
+        "description": "Net income after taxes and extraordinary items (annualized) as a percent of average total assets.",
+        "type": "number",
+        "x-elastic-type": "double",
+        "x-source-mapping": [
+          {
+            "formula": {
+              "type": "percentage",
+              "parameters": {
+                "setField": "ROA",
+                "numerator": "NETINCA",
+                "denominator": "ASSET5"
+              }
+            }
+          }
+        ]
+      },
+      "ROE": {
+        "title": "Return on Equity (ROE)",
+        "description": "Annualized net income as a percent of average equity on a consolidated basis.     Note: If retained earnings are  negative, the ratio is shown as NA.",
+        "type": "number",
+        "x-elastic-type": "double",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "ROE"
+          }
+        ]
+      },
+      "NIMY": {
+        "title": "NET INTEREST MARGIN",
+        "description": null,
+        "type": "number",
+        "x-elastic-type": "double",
+        "x-source-mapping": [
+          {
+            "formula": {
+              "type": "percentage",
+              "parameters": {
+                "setField": "NIMY",
+                "numerator": "NIMA",
+                "denominator": "ERNAST5"
+              }
+            }
+          }
+        ]
+      },
+      "RBC1AAJ": {
+        "title": "LEVERAGE RATIO-PCA",
+        "description": null,
+        "type": "number",
+        "x-elastic-type": "double",
+        "x-source-mapping": [
+          {
+            "formula": {
+              "type": "percentage",
+              "parameters": {
+                "setField": "RBC1AAJ",
+                "numerator": "RBCT1",
+                "denominator": "AVASSETJ"
+              }
+            }
+          }
+        ]
+      },
+      "RBCRWAJ": {
+        "title": "TOTAL RBC RATIO-PCA",
+        "description": null,
+        "type": "number",
+        "x-elastic-type": "double",
+        "x-source-mapping": [
+          {
+            "formula": {
+              "type": "percentage",
+              "parameters": {
+                "setField": "RBCRWAJ",
+                "numerator": "RBC",
+                "denominator": "RWAJT"
+              }
+            }
+          }
+        ]
+      },
+      "BRO": {
+        "title": "BROKERED DEP",
+        "description": null,
+        "type": "number",
+        "x-source-mapping": [
+          {
+            "file": "RISVIEW",
+            "field": "BRO"
+          }
+        ]
+      }
+    }
+  },
+  "failures": {
+    "url": "https://api.fdic.gov/banks/docs/failure_properties.yaml",
+    "sha256": "7e3137fb6fc93dd49371b4d032f48fad403efd3d9a7f5cc8ca5480c00807364c",
+    "fields": {
+      "CERT": {
+        "type": "string",
+        "x-elastic-type": "keyword",
+        "title": "Cert",
+        "description": "The certificate number assigned by the FDIC used to identify institutions and for the issuance of insurance certificates. By clicking on this number, you will link to the Institution Directory (ID) system which will provide the last demographic and financial data filed by the selected institution."
+      },
+      "NAME": {
+        "type": "string",
+        "x-elastic-type": "keyword",
+        "title": "Institution Name",
+        "description": "This is the legal name of the institution. When available, the Institution's name links to useful information for the customers and vendors of these institutions. This information includes press releases, information about the acquiring institution, (if applicable), how your accounts and loans are affected, and how vendors can file claims against the receivership."
+      },
+      "CITYST": {
+        "type": "string",
+        "x-elastic-type": "keyword",
+        "title": "Location",
+        "description": "The city and state (or territory) of the headquarters of the institution."
+      },
+      "FAILDATE": {
+        "type": "string",
+        "format": "date-time",
+        "title": "Effective Date",
+        "description": "The date that the failed / assisted institution ceased to exist as a privately held going concern. For institutions that entered into government ownership, such as FDIC Bridge Banks and RTC conservatorships, this is the date that they entered into such ownership."
+      },
+      "FAILYR": {
+        "type": "string",
+        "x-elastic-type": "keyword",
+        "title": "Year",
+        "description": "The 4-digit year that the failed / assisted institution ceased to exist as a privately held going concern. For institutions that entered into government ownership, such as FDIC Bridge Banks and RTC conservatorships, this is the date that they entered into such ownership."
+      },
+      "COST": {
+        "type": "number",
+        "x-elastic-type": "double",
+        "x-number-unit": "Thousands of US Dollars",
+        "title": "Estimated Loss",
+        "description": "The estimated loss is the difference between the amount disbursed from the Deposit Insurance Fund (DIF) to cover obligations to insured depositors and the amount estimated to be ultimately recovered from the liquidation of the receivership estate. Estimated losses reflect unpaid principal amounts deemed unrecoverable and do not reflect interest that may be due on the DIF's administrative or subrogated claims should its principal be repaid in full.\nNotes:\nComprehensive data on estimated losses are not available for FDIC-insured failures prior to 1986, or for FSLIC-insured failures from 1934-88. Estimated loss is presented as \"N/A\" in years for which comprehensive information is not available.\nEstimated Loss data was previously referred to as 'Estimated Cost' in past releases of the Historical Statistic on Banking. For RTC receiverships, the 'Estimated Cost' included an allocation of FDIC corporate revenue and expense items such as interest expense on Federal Financing Bank debt, interest expense on escrowed funds and interest revenue on advances to receiverships. Other FDIC receiverships did not include such an allocation. To maintain consistency with FDIC receiverships, the RTC allocation is no longer reflected in the estimated loss amounts for failed / assisted institutions that were resolved through RTC receiverships.\nBeginning with the release of 2007 information, the 'Estimated Loss' in the Historical Statistics on Banking is presented and defined consistently with the aggregate Estimated Receivership Loss for FRF-RTC institutions and Estimated Losses for FDIC receiverships that are reported in the FDIC's Annual Report. The estimated loss is obtained from the FDIC's Failed Bank Cost Analysis (FBCA) report and the RTC Loss report. The FBCA provides data for receiverships back to 1986. The RTC Loss Report provides similar data back to 1989. \nQuestions regarding Estimated Loss should be sent to DOFBusinessCenter@fdic.gov. \nAlso, for more detail regarding resolution transactions and the FDIC's receivership activities, see Managing the Crisis: The FDIC and RTC Experience, a historical study prepared by the FDIC's Division of Resolutions and Receiverships. Copies are available from the FDIC's Public Information Center."
+      },
+      "QBFASSET": {
+        "type": "number",
+        "x-elastic-type": "double",
+        "x-number-unit": "Thousands of US Dollars",
+        "title": "Total Assets",
+        "description": "The Total assets owned by the institution including cash, loans, securities, bank premises and other assets as of the last Call Report or Thrift Financial Report filed by the institution prior to the effective date. Note this does not necessarily reflect total assets on the last report filed because in some cases reports were filed after the effective date. This total does not include off-balance-sheet accounts."
+      },
+      "QBFDEP": {
+        "type": "number",
+        "x-elastic-type": "double",
+        "x-number-unit": "Thousands of US Dollars",
+        "title": "Total Deposits",
+        "description": "Total including demand deposits, money market deposits, other savings deposits, time deposits and deposits in foreign offices as of the last Call Report or Thrift Financial Report filed by the institution prior to the effective date. Note this does not necessarily reflect total deposits on the last report filed because in some cases reports were filed after the effective date."
+      },
+      "RESTYPE": {
+        "type": "string",
+        "x-elastic-type": "keyword",
+        "title": "Resolution",
+        "description": "The given institution has failure stature or it can be assistance has been provided by FDIC in merging with other institution.",
+        "enum": [
+          "Failure",
+          "Assistance"
+        ]
+      }
+    }
+  },
+  "institutions": {
+    "url": "https://api.fdic.gov/banks/docs/institution_properties.yaml",
+    "sha256": "6ed1763c66a9e240904a45712b23d825c0f31beaadb6cd0213fc1bf00b2af1b9",
+    "fields": {
+      "CERT": {
+        "title": "FDIC Certificate #",
+        "description": "A unique NUMBER assigned by the FDIC used to identify institutions and for the issuance of insurance certificates.",
+        "type": "string",
+        "x-source-mapping": [
+          {
+            "file": "VINST_FIN_CUR_SDC",
+            "field": "ORG_CERT_NUM"
+          }
+        ]
+      },
+      "NAME": {
+        "type": "string",
+        "x-elastic-type": "keyword",
+        "title": "Institution name",
+        "description": "The legal title or name of the institution.",
+        "x-source-mapping": [
+          {
+            "file": "VINST_FIN_CUR_SDC",
+            "field": "INST_FIN_LGL_NME"
+          }
+        ]
+      },
+      "STNAME": {
+        "title": "State Name",
+        "description": "State in which the the institution is physically located. The FDIC Act defines state as any State of the United States, the District of Columbia, and any territory of the United States, Puerto Rico, Guam, American Samoa, the Trust Territory of the Pacific Islands, the Virgin Island, and the Northern Mariana Islands.",
+        "type": "string",
+        "x-source-mapping": [
+          {
+            "file": "VINST_FIN_CUR_SDC",
+            "field": "LOCN_PHY_ST_NME"
+          }
+        ]
+      },
+      "BKCLASS": {
+        "title": "Institution Class",
+        "enum": [
+          "N",
+          "SM",
+          "NM",
+          "SB",
+          "SA",
+          "OI"
+        ],
+        "description": "A classification code assigned by the FDIC based on the institution's charter type (commercial bank or savings institution), charter agent (state or federal), Federal Reserve membership status (Fed member, Fed non-member) and its primary federal regulator (state chartered institutions are subject to both federal and state supervision). N - Commercial bank, national (federal) charter, Fed member, and supervised by the Office of the Comptroller of the Currency (OCC); NM - Commercial bank, state charter, Fed non-member, and supervised by the Federal Deposit Insurance Corporation (FDIC); OI - Insured U.S. branch of a foreign chartered institution (IBA) and supervised by the OCC or FDIC; SB – Federal savings banks, federal charter, supervised by the OCC or before July 21,2011 the Office of Thrift Supervision (OTS); SI - State chartered stock savings banks, supervised by the FDIC; SL - State chartered stock savings and loan associations, supervised by the FDIC or before July 21,2011 the OTS; SM - Commercial bank, state charter, Fed member, and supervised by the Federal Reserve Bank (FRB); NC – Noninsured non-deposit commercial banks and/or trust companies regulated by the OCC, a state, or a territory; NS - Noninsured stock savings bank supervised by a state or territory; CU - state or federally chartered credit unions supervised by the National Credit Union Association (NCUA).",
+        "type": "string",
+        "x-source-mapping": [
+          {
+            "file": "VINST_FIN_CUR_SDC",
+            "field": "INST_CLASS_CDE"
+          }
+        ]
+      },
+      "ACTIVE": {
+        "type": "number",
+        "title": "Institution Status",
+        "description": "A number indicating the status of an institution. 1='Institutions that are currently open and insured by the FDIC'; 0='Institution closed or not insured by FDIC'",
+        "x-source-mapping": [
+          {
+            "formula": {
+              "type": "raw",
+              "parameters": {
+                "script": "if(ctx.INST_FIN_ACTV_FLG?.toLowerCase() == \"y\") { \n  ctx.ACTIVE = 1; \n} else { \n  ctx.ACTIVE = 0;\n}\n"
+              }
+            }
+          }
+        ]
+      },
+      "ESTYMD": {
+        "title": "Established Date",
+        "description": "The date on which the institution began operations.",
+        "type": "string",
+        "format": "date-time",
+        "x-source-mapping": [
+          {
+            "formula": {
+              "type": "date",
+              "parameters": {
+                "inputFormat": "yyyy-MM-dd'T'HH:mm:ss",
+                "outputFormat": "MM/dd/yyyy",
+                "inputField": "INST_FIN_ESTB_DTE",
+                "outputField": "ESTYMD"
+              }
+            }
+          }
+        ]
+      },
+      "ENDEFYMD": {
+        "title": "End date",
+        "description": "The date that ends or closes out the last structural event relating to an institution. For closed institutions, this date represents the day that the institution became inactive.",
+        "type": "string",
+        "format": "date-time",
+        "x-source-mapping": [
+          {
+            "formula": {
+              "type": "date",
+              "parameters": {
+                "inputFormat": "yyyyMMdd",
+                "outputFormat": "MM/dd/yyyy",
+                "inputField": "ORG_END_NUM_DTE",
+                "outputField": "ENDEFYMD"
+              }
+            }
+          }
+        ]
+      },
+      "CHANGEC1": {
+        "title": "Change Code",
+        "description": "FDIC code used to signify a structural event relating to an institution.",
+        "type": "string",
+        "x-source-mapping": [
+          {
+            "formula": {
+              "type": "raw",
+              "parameters": {
+                "script": "if(ctx.EVENTS !== null ) { \n\n  List changeCodeList = new ArrayList();\n  String[] codeList = new String[] {\"1\", \"110\", \"150\", \"211\", \"212\", \"213\", \"215\", \"216\", \"217\", \"221\", \"222\", \"223\", \"225\", \"230\", \"231\", \"235\", \"240\", \"350\", \"360\", \"410\", \"411\", \"430\", \"440\", \"470\", \"510\", \"520\", \"610\", \"810\", \"811\", \"812\", \"820\", \"830\"};\n  List includeCodeList = Arrays.asList(codeList);\n\n  \n  for (int i = 0; i < ctx.EVENTS.length; ++i) {\n    if (ctx.EVENTS[i].EFFDATE == ctx.ORG_EFF_NUM_DTE && \n        ctx.EVENTS[i].ENDEFYMD == ctx.ORG_END_NUM_DTE &&\n        includeCodeList.contains(Integer.toString(ctx.EVENTS[i].ACT_EVT_NUM))) {\n\n      ctx.EVENTS[i].CHANGE_ORDER = 3;\n      if (ctx.EVENTS[i].ACT_EVT_NUM !== null) {\n        if(ctx.EVENTS[i]?.ACT_EVT_NUM > 200 && ctx.EVENTS[i]?.ACT_EVT_NUM <= 299) {\n          ctx.EVENTS[i].CHANGE_ORDER = 1;\n        } else if(ctx.EVENTS[i]?.ACT_EVT_NUM > 800 && ctx.EVENTS[i]?.ACT_EVT_NUM <= 899) {\n          ctx.EVENTS[i].CHANGE_ORDER = 2;\n        }\n      }\n\n      changeCodeList.add(ctx.EVENTS[i])\n    }\n  }\n\n  changeCodeList.sort((x,y) -> {\n    int change = x.CHANGE_ORDER.compareTo(y.CHANGE_ORDER);\n    if (change === 0) { change = y.PROCDATE.compareTo(x.PROCDATE); }\n    if (change === 0) { change = y.ACT_EVT_NUM.compareTo(x.ACT_EVT_NUM); }\n    return change;\n  });\n  \n  ctx.PARSED_EVENTS = changeCodeList;\n\n  for (int a = 0; a < ctx.PARSED_EVENTS.length; ++a) {\n    String changeCodeProperty = \"CHANGEC\" + (a+1);\n    ctx[changeCodeProperty] = ctx.PARSED_EVENTS[a].ACT_EVT_NUM\n  }\n}\n"
+              }
+            }
+          }
+        ]
+      },
+      "INSDATE": {
+        "title": "Date of Deposit Insurance",
+        "description": "The date that an institution obtained federal deposit insurance.",
+        "type": "string",
+        "format": "date-time",
+        "x-source-mapping": [
+          {
+            "formula": {
+              "type": "date",
+              "parameters": {
+                "inputFormat": "yyyy-MM-dd'T'HH:mm:ss",
+                "outputFormat": "MM/dd/yyyy",
+                "inputField": "POL_1_INS_BEG_DTE",
+                "outputField": "INSDATE"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

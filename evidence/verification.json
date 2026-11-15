@@ -1,0 +1,23 @@
+{
+  "executed_at_utc": "2026-11-15T12:02:52.845588+00:00",
+  "environment": "Managed Linux verification runtime",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "versions": {
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "pyarrow": "19.0.1",
+    "polars": "1.26.0",
+    "requests": "2.32.3"
+  },
+  "tests_exit_code": 0,
+  "tests_log": "DOWNLOADED financials/20230331: 1\nDOWNLOADED financials/20230630: 1\nDOWNLOADED failures/all: 1\nDOWNLOADED institutions/all: 1\nVERIFIED RESUME financials/20230331: 1\nVERIFIED RESUME financials/20230630: 1\nVERIFIED RESUME failures/all: 1\nVERIFIED RESUME institutions/all: 1\nVERIFIED RESUME financials/20230630: 1\nVERIFIED RESUME failures/all: 1\nVERIFIED RESUME institutions/all: 1\nDOWNLOADED financials/20230331: 1\ntest_failure_missing_cert_is_preserved (test_part1.Tests.test_failure_missing_cert_is_preserved) ... ok\ntest_invalid_types_and_duplicate_keys (test_part1.Tests.test_invalid_types_and_duplicate_keys) ... ok\ntest_pagination_empty_page_is_failure (test_part1.Tests.test_pagination_empty_page_is_failure) ... ok\ntest_pagination_source_change_is_failure (test_part1.Tests.test_pagination_source_change_is_failure) ... ok\ntest_resume_corruption_missing_quarter_and_storage (test_part1.Tests.test_resume_corruption_missing_quarter_and_storage) ... ok\ntest_scope (test_part1.Tests.test_scope) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.174s\n\nOK\n",
+  "full_scope_passed": true,
+  "benchmark_equivalence_passed": true,
+  "source_hashes": {
+    "src/__init__.py": "b9f7228271a877754db560b4ed30a85a1266f0d5ac92f366fd7b53fdebf40322",
+    "src/acquisition.py": "a9507145beb1598d8e2c5ff4f58b9f429c302cd6bc9e9af819986dc987389351",
+    "src/storage.py": "b09f3ee4a9af728a980992ff36dc9305712da2200a6234fe61a7c568fb9b20a6"
+  },
+  "limitations": "Execution validates this source snapshot and environment. Historical revisions and publication lags require later analysis."
+}
